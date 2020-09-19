@@ -10,8 +10,8 @@ import { QUERY_ME } from '../utils/queries';
 import { useMutation } from '@apollo/react-hooks';
 import { REMOVE_BOOK } from '../utils/mutations';
 
-
 const SavedBooks = () => {
+
 
   const { loading, data } = useQuery(QUERY_ME);
 
@@ -30,6 +30,7 @@ const SavedBooks = () => {
     }
 
     try {
+
       const { data } = await removeBook(
         {
           variables: {
@@ -82,7 +83,6 @@ const SavedBooks = () => {
       </Container>
     </>
   );
-  // }
 };
 
 

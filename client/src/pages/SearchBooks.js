@@ -14,7 +14,6 @@ const SearchBooks = () => {
   // create state to hold saved bookId values
   const [savedBookIds, setSavedBookIds] = useState(getSavedBookIds());
 
-  // new -- adding save book mutation hook
   const [saveBook, { error }] = useMutation(SAVE_BOOK);
 
 
@@ -70,6 +69,7 @@ const SearchBooks = () => {
     }
 
     try {
+
       const { data } = await saveBook(
         {
           variables: {
@@ -119,7 +119,6 @@ const SearchBooks = () => {
             ? `Viewing ${searchedBooks.length} results:`
             : 'Search for a book to begin'}
         </h2>
-        {error && <span className="ml-2">Something went wrong...</span>}
         <CardColumns>
           {searchedBooks.map((book) => {
             return (
