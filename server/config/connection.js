@@ -5,6 +5,8 @@ mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost/googlebooks', {
   useUnifiedTopology: true,
   useCreateIndex: true,
   useFindAndModify: true,
+}, function (error) {
+  console.log(error)
 });
 
 module.exports = mongoose.connection;
