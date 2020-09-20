@@ -30,7 +30,7 @@ This application was developed with the following application structures:
 2. [GraphQL](https://graphql.org/learn/)
 3. [Mongoose](https://mongoosejs.com/docs/api.html)
 3. [Node.js](https://nodejs.org/en/docs/)
-4. [JavaScrpit](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
+4. [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
 
 ---
 
